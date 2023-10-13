@@ -1,0 +1,243 @@
+{
+    "dados": [
+        {
+            "create_data": "2023-10-07T01:15:13.525Z",
+            "tipo": "cch",
+            "tipoNome": "Condições de Chuva",
+            "sitregioes": [
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Bom Retiro",
+                            "Victor Konder",
+                            "Jardim Blumenau",
+                            "Boa Vista",
+                            "Vorstadt",
+                            "Centro",
+                            "Ponta Aguda",
+                            "Ribeirão Fresco"
+                        ],
+                        "id": 4,
+                        "nome": "Central"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF9622",
+                        "nivel": 3,
+                        "cor_fonte": "#000000",
+                        "id": 81,
+                        "condicao": "Atenção"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Fortaleza Alta",
+                            "Fidélis",
+                            "Fortaleza",
+                            "Itoupava Norte",
+                            "Tribess",
+                            "Nova Esperança"
+                        ],
+                        "id": 83,
+                        "nome": "Leste"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF9622",
+                        "nivel": 3,
+                        "cor_fonte": "#000000",
+                        "id": 81,
+                        "condicao": "Atenção"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Itoupavazinha",
+                            "Testo Salto",
+                            "Vila Itoupava",
+                            "Badenfurt",
+                            "Itoupava Central",
+                            "Itoupava Seca",
+                            "Salto do Norte"
+                        ],
+                        "id": 82,
+                        "nome": "Norte"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF9622",
+                        "nivel": 3,
+                        "cor_fonte": "#000000",
+                        "id": 81,
+                        "condicao": "Atenção"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Salto Weissbach",
+                            "Velha",
+                            "Água Verde",
+                            "Do Salto",
+                            "Escola Agrícola",
+                            "Passo Manso",
+                            "Velha Central",
+                            "Velha Grande",
+                            "Vila Nova"
+                        ],
+                        "id": 85,
+                        "nome": "Oeste"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF9622",
+                        "nivel": 3,
+                        "cor_fonte": "#000000",
+                        "id": 81,
+                        "condicao": "Atenção"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Valparaíso",
+                            "Da Glória",
+                            "Progresso",
+                            "Garcia",
+                            "Vila Formosa"
+                        ],
+                        "id": 84,
+                        "nome": "Sul"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF9622",
+                        "nivel": 3,
+                        "cor_fonte": "#000000",
+                        "id": 81,
+                        "condicao": "Atenção"
+                    }
+                }
+            ],
+            "id": 34231,
+            "descricao": "subid atenção todas"
+        },
+        {
+            "create_data": "2023-10-04T16:55:53.452Z",
+            "tipo": "pes",
+            "tipoNome": "Risco de Deslizamento",
+            "sitregioes": [
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Bom Retiro",
+                            "Victor Konder",
+                            "Jardim Blumenau",
+                            "Boa Vista",
+                            "Vorstadt",
+                            "Centro",
+                            "Ponta Aguda",
+                            "Ribeirão Fresco"
+                        ],
+                        "id": 4,
+                        "nome": "Central"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF9622",
+                        "nivel": 3,
+                        "cor_fonte": "#000000",
+                        "id": 43,
+                        "condicao": "Atenção"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Fortaleza Alta",
+                            "Fidélis",
+                            "Fortaleza",
+                            "Itoupava Norte",
+                            "Tribess",
+                            "Nova Esperança"
+                        ],
+                        "id": 83,
+                        "nome": "Leste"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF9622",
+                        "nivel": 3,
+                        "cor_fonte": "#000000",
+                        "id": 43,
+                        "condicao": "Atenção"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Itoupavazinha",
+                            "Testo Salto",
+                            "Vila Itoupava",
+                            "Badenfurt",
+                            "Itoupava Central",
+                            "Itoupava Seca",
+                            "Salto do Norte"
+                        ],
+                        "id": 82,
+                        "nome": "Norte"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF0000",
+                        "nivel": 4,
+                        "cor_fonte": "#FFFFFF",
+                        "id": 24,
+                        "condicao": "Alerta"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Salto Weissbach",
+                            "Velha",
+                            "Água Verde",
+                            "Do Salto",
+                            "Escola Agrícola",
+                            "Passo Manso",
+                            "Velha Central",
+                            "Velha Grande",
+                            "Vila Nova"
+                        ],
+                        "id": 85,
+                        "nome": "Oeste"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF0000",
+                        "nivel": 4,
+                        "cor_fonte": "#FFFFFF",
+                        "id": 24,
+                        "condicao": "Alerta"
+                    }
+                },
+                {
+                    "regiao": {
+                        "bairros": [
+                            "Valparaíso",
+                            "Da Glória",
+                            "Progresso",
+                            "Garcia",
+                            "Vila Formosa"
+                        ],
+                        "id": 84,
+                        "nome": "Sul"
+                    },
+                    "condicao": {
+                        "cor_fundo": "#FF0000",
+                        "nivel": 4,
+                        "cor_fonte": "#FFFFFF",
+                        "id": 24,
+                        "condicao": "Alerta"
+                    }
+                }
+            ],
+            "id": 34191,
+            "descricao": "subida alerta nas regiões sul, oeste e norte"
+        }
+    ],
+    "datahoraAtualizacao": "2023-10-07T01:15:19.624Z"
+}

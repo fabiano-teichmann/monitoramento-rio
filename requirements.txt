@@ -1,0 +1,11 @@
+pytest
+rocketry
+sqlalchemy
+pandas
+python-dotenv
+python-decouple
+psycopg2-binary
+loguru
+httpretty
+httpx
+pendulum
