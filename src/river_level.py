@@ -19,7 +19,7 @@ class RiverLevel:
         self.url = os.path.join(ALERTBU_BASE_URL, "static/data/nivel_oficial.json")
         now = pendulum.now(tz="America/Sao_Paulo").isoformat()
         self.path_level = os.path.join(
-            os.path.split(os.getcwd())[0], "data", f"level-{now}"
+            os.path.split(os.getcwd())[0], "data", f"level-{now}.json"
         )
 
     def __get_data(self):

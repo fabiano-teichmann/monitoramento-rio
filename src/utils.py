@@ -11,7 +11,7 @@ def convert_to_float(value) -> float:
 
 def get_condition(level: float, conditions: dict):
     level = int(level)
-    cond = ""
+    cond = "normal"
     for c in conditions:
         if level >= c["nivel"]:
             cond = c["condicao"]
