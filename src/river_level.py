@@ -43,7 +43,9 @@ class RiverLevel:
                     {
                         "data_hora_leitura": dt,
                         "nivel": round(d["nivel"], 2),
-                        "variacao": round(d["nivel"] - last_level, 2),
+                        "variacao": round(d["nivel"] - last_level, 2)
+                        if last_level
+                        else "",
                         "rio": "itajai-içu",
                         "condicao": get_condition(d["nivel"], conditions),
                     }
@@ -52,12 +54,16 @@ class RiverLevel:
 
     @staticmethod
     def __get_historical():
-        logger.info("Get historical data")
-        data = pd.read_sql(
-            sql="select * from level_river order by data_hora_leitura desc limit 1",
-            con=engine,
-        ).to_dict(orient="records")
-        return data[0]["data_hora_leitura"], data[0]["nivel"]
+        try:
+            logger.info("Get historical data")
+            data = pd.read_sql(
+                sql="select * from level_river order by data_hora_leitura desc limit 1",
+                con=engine,
+            ).to_dict(orient="records")
+            return data[0]["data_hora_leitura"], data[0]["nivel"]
+        except Exception as e:
+            logger.error(e)
+            return pendulum.datetime(2023, 1, 1), None
 
     def __transform(self):
         logger.info("Transform data")
@@ -71,6 +77,7 @@ class RiverLevel:
         level = self.__transform()
         if level:
             df = pd.DataFrame(level)
+            logger.info("Persist data")
             df.to_sql("level_river", engine, if_exists="append", index=False)
             logger.info("Add new record")
         else:

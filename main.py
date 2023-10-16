@@ -17,4 +17,5 @@ def extract_level_river():
 
 
 if __name__ == "__main__":
+    RiverLevel().execute()
     app.run()
