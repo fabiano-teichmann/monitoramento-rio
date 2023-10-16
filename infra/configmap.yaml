@@ -1,0 +1,18 @@
+apiVersion: v1
+# Kind for kubernets ConfigMap
+kind: ConfigMap
+metadata:
+  # Name your ConfigMap
+  name: secret-credentials
+  labels:
+    app: alertblu
+data:
+  # User DB
+  POSTGRES_DB: alertblu
+  # Db user
+  POSTGRES_USER: alertblu
+  # Db password
+  POSTGRES_PASSWORD: alertBlu@122
+  ALERTBU_BASE_URL: https://alertablu.blumenau.sc.gov.br
+  DATABASE_URL: postgresql://alertblu:alertBlu@122@localhost:5432/alertblu
+

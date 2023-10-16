@@ -9,3 +9,5 @@ loguru
 httpretty
 httpx
 pendulum
+ipython
+pydantic==1.10.13

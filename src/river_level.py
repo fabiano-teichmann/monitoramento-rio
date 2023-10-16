@@ -8,7 +8,7 @@ import httpx
 import pandas as pd
 from sqlalchemy import create_engine
 
-from settings import ALERTBU_BASE_URL, DATABASE_URL
+from src.settings import ALERTBU_BASE_URL, DATABASE_URL
 from src.utils import get_condition, convert_to_datetime
 
 engine = create_engine(DATABASE_URL)
@@ -18,9 +18,7 @@ class RiverLevel:
     def __init__(self):
         self.url = os.path.join(ALERTBU_BASE_URL, "static/data/nivel_oficial.json")
         now = pendulum.now(tz="America/Sao_Paulo").isoformat()
-        self.path_level = os.path.join(
-            os.path.split(os.getcwd())[0], "data", f"level-{now}.json"
-        )
+        self.path_level = os.path.join(os.getcwd(), "data", f"level-{now}.json")
 
     def __get_data(self):
         logger.info("Get level river")
