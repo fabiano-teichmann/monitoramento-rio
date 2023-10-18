@@ -3,15 +3,15 @@ apiVersion: v1
 kind: Service
 metadata:
   # Name your service
-  name: alertblu
+  name: postgresdb
   labels:
-    app: alertblu
+    app: postgresdb
 spec:
   # Choose how to expose your service
   type: NodePort
   ports:
     # The port number to expose the service
-    - port: 5432
+    - port: 5433
   # Pod to route service traffic  
   selector:
-    app: alertblu
+    app: postgresdb

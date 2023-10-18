@@ -20,12 +20,12 @@ spec:
     spec:
       containers:
         # The container name to execute pods
-        - name: postgresdb
+        - name: db
           # pull postgresimage from docker hub
           image: postgres
           ports:
             # Assign ports to expose container
-            - containerPort: 5432
+            - containerPort: 5433
           envFrom:
             # Load the environment variables/PostgresSQL credentials
             - configMapRef:

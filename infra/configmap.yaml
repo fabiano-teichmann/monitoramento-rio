@@ -14,5 +14,4 @@ data:
   # Db password
   POSTGRES_PASSWORD: alertBlu122
   ALERTBU_BASE_URL: https://alertablu.blumenau.sc.gov.br
-  DATABASE_URL: postgresql://alertblu:alertBlu122@localhost:5432/alertblu
-
+  DATABASE_URL: postgresql://superset:superset@localhost:5433/alertblu

@@ -7,6 +7,7 @@ from loguru import logger
 import httpx
 import pandas as pd
 from sqlalchemy import create_engine
+from tenacity import retry, stop_after_attempt
 
 from src.settings import ALERTBU_BASE_URL, DATABASE_URL
 from src.utils import get_condition, convert_to_datetime
@@ -72,6 +73,7 @@ class RiverLevel:
         conditions = payload["condicoes"]
         return self.__build_data(data=levels, conditions=conditions)
 
+    @retry(stop=stop_after_attempt(5))
     def execute(self):
         self.__extract()
         level = self.__transform()
