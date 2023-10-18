@@ -19,7 +19,7 @@ def extract_level_river():
         save_status_etl(status="success", task="river_level")
     except Exception as e:
         logger.error(e)
-        save_status_etl(status="success", task="river_level", error=str(e))
+        save_status_etl(status="error", task="river_level", error=str(e))
 
 
 @app.task(daily)

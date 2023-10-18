@@ -35,7 +35,7 @@ def save_status_etl(status: str, task: str, error: str = ""):
     data = [
         {
             "status": status,
-            "datetime": pendulum.now(tz="America/Sao_Paulo").isoformat(),
+            "datetime": pendulum.now(tz="America/Sao_Paulo").format('YYYY-MM-DD HH:mm'),
             "task": task,
             "error": error,
         }
