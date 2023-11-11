@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  db:
+    env_file: docker/.env-non-dev
+    image: postgres:14
+    container_name: superset_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_home:/var/lib/postgresql/data
+
+  etl_alertablu:
+    image: alertablu:last
+    container_name: etl_alertablu
+    restart: unless-stopped
+    depends_on: *db
+
+
+  etl_finance:
+    image: finance:last
+    container_name: etl_finance
+    restart: unless-stopped
+    depends_on: *db
+
+
+volumes:
+  db_home:
+    external: false
